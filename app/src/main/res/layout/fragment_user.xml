@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/userinfo_card">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_head_circleimageview"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/im_2"/>
+
+        <LinearLayout
+            android:id="@+id/user_nameAndNmu_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/user_head_circleimageview"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/user_name_tv"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/user_college_tv"
+                android:textSize="18sp"
+                android:layout_marginTop="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_num_tv"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_alignLeft="@+id/user_head_circleimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/user_schoolAndCollege_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/user_nameAndNmu_ll"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="35dp"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_school_circleimageview"
+                android:src="@mipmap/sxdx"
+                android:layout_width="47dp"
+                android:layout_height="47dp" />
+            <TextView
+                android:id="@+id/user_school_tv"
+                android:textSize="21sp"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/my_timetable"
+        layout="@layout/user_timetable">
+    </include>
+
+    <include
+        android:id="@+id/my_setting"
+        layout="@layout/user_seting">
+    </include>
+
+</LinearLayout>

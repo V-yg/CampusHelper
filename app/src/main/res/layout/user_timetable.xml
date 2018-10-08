@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:background="@drawable/selector_linearlayout">
+
+    <ImageView
+        android:id="@+id/timetable_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/timetable"/>
+    <TextView
+        android:text="我的课表"
+        android:id="@+id/user_timetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/timetable_iv"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ff666666"
+        android:textSize="17sp" />
+    <ImageView
+        android:id="@+id/right_iv1"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/right"/>
+
+</RelativeLayout>

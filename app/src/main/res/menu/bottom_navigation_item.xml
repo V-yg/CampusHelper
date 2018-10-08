@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/home"
+        android:title="首页" />
+    <item
+        android:id="@+id/navigation_timetable"
+        android:icon="@mipmap/timetable"
+        android:title="课表" />
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@mipmap/map"
+        android:title="地图" />
+    <item
+        android:id="@+id/navigation_user"
+        android:icon="@mipmap/myself"
+        android:title="我的" />
+
+</menu>
